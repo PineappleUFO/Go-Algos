@@ -4,6 +4,7 @@ import "fmt"
 
 // фишка в перевернутом словаре, в seen в индексе храним значение из nums | в значении храним индекс из nums
 // итерируемся по входящему массиву и проверям по ключу словаря есть ли (target-key) в словаре
+// Сложность O(n)
 func twoSum(nums []int, target int) []int {
 	seen := make(map[int]int)
 	for ind, key := range nums {
